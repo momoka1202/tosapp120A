@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>日本の景色ライブ</title>
+</head>
+<body>
+  <h1>🏯 日本の景色ライブ 🏞</h1>
+
+  <label>観光地を選択：</label>
+  <select id="spot">
+    <option value="">-- 選択してください --</option>
+    <option value="tokyoTower">東京タワー</option>
+    <option value="kyotoTemple">京都 清水寺</option>
+    <option value="osakaCastle">大阪城</option>
+    <option value="mtFuji">富士山</option>
+    <option value="sapporoClock">札幌時計台</option>
+  </select>
+
+  <br><br>
+
+  <button onclick="showLive()">見る！</button>
+
+  <br><br>
+
+  <iframe
+    id="video"
+    width="560"
+    height="315"
+    src=""
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+
+  <h2>📘 豆知識</h2>
+  <p id="info"></p>
+
+  <script>
+    const spots = {
+      tokyoTower: {
